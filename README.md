@@ -3,18 +3,25 @@ Prosthetic Hippocampal Emulator
 EEG-Based Memory Encoding & Recall Classification using Deep Learning (PyTorch) With Assistive Memory App Logic
 
 📌 Overview
+
 This project implements a non-invasive digital hippocampal prosthesis using EEG signals.
 
 It performs:
+
 EEG Preprocessing & Wave Extraction (theta, alpha, beta, gamma)
+
 Image Generation of EEG Segments
+
 CNN-based Classification (Encoding vs Recall)
+
 Memory Logging & Recall App
+
 Context-Aware Retrieval based on time proximity
 
 The system simulates how the brain encodes and recalls memory, providing assistive functionality for patients with memory impairments.
 
 🚀 Project Features
+
 🔹 1. EEG Preprocessing
 
 Loads PhysioNet EEGMMIDB dataset (.edf)
@@ -28,6 +35,7 @@ Extracts band powers (theta, alpha, beta, gamma)
 Converts each recording into .png images (per subject & session)
 
 Images stored in:
+
 outputs/SubjectXX_Y.png
 
 🔹 3. CNN Model (PyTorch)
@@ -61,6 +69,7 @@ On recall → retrieves memory closest to current system time
 Works like a digital hippocampus replacement.
 
 📁 Project Structure
+
 prosthetic_hippocampal_using_cnn/
 │
 ├── eegmmidb/                  # Raw .edf EEG dataset
